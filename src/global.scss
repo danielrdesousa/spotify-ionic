@@ -24,3 +24,32 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+/* Custom Background */
+ion-app {
+  background: #121212;
+}
+
+ion-content {
+  --background: transparent;
+}
+
+
+/* Cutom Fonts */
+@font-face {
+  font-family: 'Spotify';
+  font-weight: 500;
+  src: url('/assets/fonts/spotify-regular.ttf');
+}
+
+@font-face {
+  font-family: 'Spotify';
+  font-weight: 700;
+  src: url('/assets/fonts/spotify-bold.ttf');
+}
+
+@font-face {
+  font-family: 'Spotify';
+  font-weight: 100;
+  src: url('/assets/fonts/spotify-light.ttf');
+}

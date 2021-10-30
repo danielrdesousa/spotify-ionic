@@ -1,0 +1,105 @@
+ion-tab-bar {
+  width: 100%;
+
+  position: absolute;
+  bottom: 0;
+
+  z-index: 2;
+
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.5) 50%
+  );
+
+  --color: #b3b3b3;
+  --background: transparent;
+  --border: 0;
+}
+
+ion-tab-button {
+  --color-selected: #fff;
+
+  ion-label {
+    padding-top: 0.3rem;
+  }
+}
+
+.player {
+  width: 95%;
+  color: #ffffff;
+  background: #4a2011;
+
+  font-family: 'Spotify';
+
+  border-radius: 0.25rem;
+
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  z-index: 3;
+
+  &__album {
+    padding: .6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .album__cover {
+      display: flex;
+      gap: .7rem;
+
+      img {
+        width: 15%;
+
+        border-radius: 0.3rem;
+      }
+
+      .cover__details {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          color: #b3b3b3;
+        }
+      }
+    }
+
+    .album__options {
+      display: flex;
+      gap: 1rem;
+
+      svg {
+        width: 2rem;
+        height: 2rem;
+
+        fill: #fff;
+      }
+    }
+  }
+
+  &__bar {
+    width: 95%;
+    height: 0.125rem;
+    background: #b3b3b3;
+
+    border-radius: 0.25rem;
+
+    position: relative;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    .bar__progress {
+      height: 0.125rem;
+      background: #fff;
+
+      border-radius: 0.25rem;
+
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
